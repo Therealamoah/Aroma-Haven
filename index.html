@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <title>Aroma Haven</title>
+</head>
+<body class="">
+    <!-- Nav Bar -->
+    <!-- Bigger Screens -->
+    <nav>
+        <div class="hidden lg:block">
+            <div>
+                <div class="bg-[#151515] flex items-center justify-between px-4">
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-4">
+                        <img src="brown-coffee-cup-logo-design-hd-png-701751694776791z8t9jck4mz-removebg-preview - Copy.png" alt="" class="h-20 w-20">
+                        <h1 class="text-2xl font-serif text-yellow-400">Aroma Haven</h1>
+                    </div>
+                    <!-- Navigation Links -->
+                    <div class="flex space-x-6 text-yellow-600 font-medium">
+                        <a href="#" class="hover:text-yellow-400">Home</a>
+                        <a href="#" class="hover:text-yellow-400">Products</a>
+                        <a href="#" class="hover:text-yellow-400">Location</a>
+                        <a href="#" class="hover:text-yellow-400">Contact Us</a>
+                    </div>
+                    <!-- Sign-in & order online -->
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="text-yellow-600 hover:text-yellow-400 border px-6 py-2 rounded-full">Sign In</a>
+                        <a href="#" class="bg-yellow-600 text-white font-medium px-4 py-2 rounded-full hover:bg-yellow-500 ">Order Online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Medium & Small Screens -->
+        <div class="flex lg:hidden bg-[#151515] px-4 py-2 items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+            <img src="brown-coffee-cup-logo-design-hd-png-701751694776791z8t9jck4mz-removebg-preview - Copy.png" alt="" class="h-12 w-12">
+            <h1 class="text-lg font-serif text-yellow-400">Aroma Haven</h1>
+            </div>
+            <!-- Hamburger Menu -->
+            <button id="menu-btn" class="text-yellow-600 text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="bg-[#151515] text-yellow-600 font-medium px-4 py-2 space-y-2 hidden">
+            <a href="#" class="block hover:text-yellow-400">Home</a>
+            <a href="#" class="block hover:text-yellow-400">Products</a>
+            <a href="#" class="block hover:text-yellow-400">Location</a>
+            <a href="#" class="block hover:text-yellow-400">Contact Us</a>
+            <a href="#" class="block text-yellow-600 hover:text-yellow-400 border px-2 py-2 rounded-full mt-2 w-[10rem] place-self-center">Sign In</a>
+            <a href="#" class="block bg-yellow-600 text-white font-medium px-4 py-2 rounded-full hover:bg-yellow-500 mt-2 w-[10rem] place-self-center">Order Online</a>
+        </div>
+        <script>
+            // Simple mobile menu toggle
+            document.addEventListener('DOMContentLoaded', function () {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            menuBtn.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+            });
+        </script>
+        </nav>
+</body>
+</html>
