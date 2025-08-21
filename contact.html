@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Haven</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+   <link rel="icon" type="image/png" href="brown-coffee-cup-logo-design-hd-png-701751694776791z8t9jck4mz-removebg-preview - Copy.png">
+
+</head>
+<body>
+     <!-- Nav Bar -->
+    <!-- Bigger Screens -->
+    <nav>
+        <div class="hidden lg:block">
+            <div>
+                <div class="bg-[#151515] flex items-center justify-between px-4">
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-4">
+                        <img src="brown-coffee-cup-logo-design-hd-png-701751694776791z8t9jck4mz-removebg-preview - Copy.png" alt="" class="h-20 w-20">
+                        <h1 class="text-2xl font-serif text-yellow-400">Aroma Haven</h1>
+                    </div>
+                    <!-- Navigation Links -->
+                    <div class="flex space-x-6 text-yellow-600 font-medium">
+                        <a href="http://127.0.0.1:5500/index.html#" class="hover:text-yellow-400">Home</a>
+                        <a href="http://127.0.0.1:5500/Products.html" class="hover:text-yellow-400">Products</a>
+                        <a href="http://127.0.0.1:5500/location.html#" class="hover:text-yellow-400">Location</a>
+                        <a href="http://127.0.0.1:5500/contact.html" class="hover:text-yellow-400">Contact Us</a>
+                    </div>
+                    <!-- Sign-in & order online -->
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="text-yellow-600 hover:text-yellow-400 border px-6 py-2 rounded-full">Sign In</a>
+                        <a href="#" class="bg-yellow-600 text-white font-medium px-4 py-2 rounded-full hover:bg-yellow-500 ">Order Online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Medium & Small Screens -->
+        <div class="flex lg:hidden bg-[#151515] px-4 py-2 items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+            <img src="brown-coffee-cup-logo-design-hd-png-701751694776791z8t9jck4mz-removebg-preview - Copy.png" alt="" class="h-12 w-12">
+            <h1 class="text-lg font-serif text-yellow-400">Aroma Haven</h1>
+            </div>
+            <!-- Hamburger Menu -->
+            <button id="menu-btn" class="text-yellow-600 text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="bg-[#151515] text-yellow-600 font-medium px-4 py-2 space-y-2 hidden">
+            <a href="http://127.0.0.1:5500/index.html#" class="block hover:text-yellow-400">Home</a>
+            <a href="http://127.0.0.1:5500/Products.html" class="block hover:text-yellow-400">Products</a>
+            <a href="http://127.0.0.1:5500/location.html#" class="block hover:text-yellow-400">Location</a>
+            <a href="http://127.0.0.1:5500/contact.html" class="block hover:text-yellow-400">Contact Us</a>
+            <a href="#" class="block text-yellow-600 hover:text-yellow-400 border px-2 py-2 rounded-full mt-2 w-[10rem] place-self-center">Sign In</a>
+            <a href="#" class="block bg-yellow-600 text-white font-medium px-4 py-2 rounded-full hover:bg-yellow-500 mt-2 w-[10rem] place-self-center">Order Online</a>
+        </div>
+        <script>
+            // Simple mobile menu toggle
+            document.addEventListener('DOMContentLoaded', function () {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            menuBtn.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+            });
+        </script>
+        </nav>
+         <!-- Hero Section -->
+         <div class="relative h-[25rem]">
+            <img src="https://i.pinimg.com/736x/fe/fc/ba/fefcba5f4930ba341ac89f90197fe3c2.jpg" alt="" class="w-full h-[25rem] object-cover">
+            <h1 class="absolute -mt-[25rem] place-self-center text-white font-serif text-5xl">Contact Us</h1>
+         </div>
+         <div class="mt-10">
+            <img src="brown-coffee-cup-logo-design-hd-png-701751694776791z8t9jck4mz-removebg-preview - Copy.png" alt="" class="h-20 w-20 place-self-center mt-5">
+         </div>
+         <div>
+            <h1 class="text-4xl font-semibold text-yellow-900 text-center mt-5">Get in touch with us</h1>
+            <h2 class="text-center mt-3 font-semibold text-yellow-900">A LITTLE SOMETHING ABOUT CONTACT US</h2>
+         </div>
+         <div class="text-center mt-5">
+            <p class="text-yellow-900 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.Quo unde est perferendis <br>sapiente dolore earum, voluptas et error at consequuntur saepe nobis provident soluta laboriosam quidem aspernatur, id delectus ipsum!</p>
+         </div>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-10 px-4">
+         <div>
+            <h1 class="text-2xl font-semibold text-yellow-900 text-center mt-5">Contact Form</h1>
+            <form class="max-w-md mx-auto mt-5">
+                <div class="mb-4">
+                    <label for="name" class="block text-yellow-900 font-semibold mb-2">Name</label>
+                    <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-yellow-900 font-semibold mb-2">Email</label>
+                    <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-yellow-900 font-semibold mb-2">Message</label>
+                    <textarea id="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded" required></textarea>
+                </div>
+                <button type="submit" class="bg-yellow-600 text-white font-medium px-4 py-2 rounded-full hover:bg-yellow-500 w-full">Send Message</button>
+            </form>
+         </div>
+         <div class="flex flex-col place-self-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.7227302032!2d-0.2621311781342552!3d5.591373807724156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0xbed14ed8650e2dd3!2sAccra!5e0!3m2!1sen!2sgh!4v1755799593285!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+         </div>
+
+           <!-- Footer -->
+          <footer class="mt-0.5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-black text-white py-10 px-4">
+                <!-- Aroma log and crafting -->
+                <div>
+                    <img src="brown-coffee-cup-logo-design-hd-png-701751694776791z8t9jck4mz-removebg-preview - Copy.png" alt="" class="h-20 w-20">
+                    <h1 class="text-2xl font-serif text-yellow-400 mt-2">Aroma Haven</h1>
+                    <p class="mt-2">Crafting exceptional coffee experiences since 2025.</p>
+                </div>
+                <!-- Quick links -->
+                <div>
+                    <h2 class="text-xl font-serif text-yellow-500">Quick Links</h2>
+                    <ul class="mt-2 space-y-2">
+                        <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Products</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Location</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Contact Us</a></li>
+                    </ul>
+            </div>
+            <!-- Contact us -->
+                <div>
+                    <h2 class="text-xl font-serif text-yellow-500">Contact Us</h2>
+                    <p class="mt-2">123 Coffee Lane, Brewtown, CA 12345</p>
+                    <p class="mt-1">Email: <a href="mailto:aromahaven@gmail.com" class="text-yellow-400 hover:underline"></a></p>
+                    </div>
+
+          </footer>
+
+
+        
+    
+</body>
+</html>
